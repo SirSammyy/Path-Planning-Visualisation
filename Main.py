@@ -1,55 +1,24 @@
-import cv2 as cv
-import numpy as np
-import time
-import readImage
-import showAlgo
-import dijkstra
-import astar
-import depthFirst
-import dijkstraModification1
-import astarModification1Less
-import astarModification1Greater
+import sys
+from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QPushButton, QMainWindow
+from PyQt5.QtGui import QIcon
 
-mapToPath = []
-start = []
-goal = []
-startNode = []
-goalNode = []
+class PPVMainWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("PyQt Test")
+        self.left = 100
+        self.top = 100
+        self.width = 640
+        self.height = 480
+        self.setGeometry(self.left, self.top, self.width, self.height)
+        self.statusBar().showMessage("Status Bar")
+        self.initUI()
 
-checkedNodes = []
-finalPath = []
+    def initUI(self):
+        print("Window Made")
 
-#Size of each square in the grid
-squareHeight = 5
-squareWidth = 5   
-
-#Reads the Image and creates a path through it
-image = cv.imread("testMaps/test7.png")
-mapToPath, start, goal = readImage.convertImageToGrid(image, squareWidth, squareHeight)
-print ("Image Analysed")
-np.savetxt("mapToPath.csv", mapToPath, delimiter=",", fmt="%s", header="header")
-
-start_time = time.time()
-
-#checkedNodes, finalPath = dijkstra.dijkstraSearch(image, mapToPath, start, goal, squareHeight, squareWidth)
-#checkedNodes, finalPath = astar.astarSearch(image, mapToPath, start, goal, squareHeight, squareWidth)
-#checkedNodes, finalPath = depthFirst.depthFirstSearch(image, mapToPath, start, goal)
-#checkedNodes, finalPath = dijkstraModification1.dijkstraSearch(image, mapToPath, start, goal, squareHeight, squareWidth)
-#checkedNodes, finalPath = astarModification1Less.astarSearch(image, mapToPath, start, goal, squareHeight, squareWidth)
-checkedNodes, finalPath = astarModification1Greater.astarSearch(image, mapToPath, start, goal, squareHeight, squareWidth)
-
-print("%s s" % (str(round((time.time() - start_time),6))))
-
-num = 0
-#for i in range(0, 10):
-    #start_time = time.time()
-    #checkedNodes, finalPath = dijkstraModification1.dijkstraSearch(image, mapToPath, start, goal, squareHeight, squareWidth)
-    #checkedNodes, finalPath = astarModification1Less.astarSearch(image, mapToPath, start, goal, squareHeight, squareWidth)
-    #checkedNodes, finalPath = astarModification1Greater.astarSearch(image, mapToPath, start, goal, squareHeight, squareWidth)
-
-    #num = num + round((time.time() - start_time),6)
-
-showAlgo.drawAlgo(checkedNodes, finalPath, image, squareWidth, squareHeight)
-print(round((num/10),6))
-print("Number of Nodes Checked = ", (len(checkedNodes)))
-print("Number of Nodes in Final Path = ", (len(finalPath)))
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    ppv = PPVMainWindow()
+    ppv.show()
+    sys.exit(app.exec())
