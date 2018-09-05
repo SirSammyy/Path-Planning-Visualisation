@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4fd13b5b-9e70-404d-b329-d0fec56ab870}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>Main.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="1.ORIGINALCODE\addGridToMap.py" />
+    <Compile Include="1.ORIGINALCODE\analyseSquare.py" />
+    <Compile Include="1.ORIGINALCODE\astar.py" />
+    <Compile Include="1.ORIGINALCODE\astarModification1Greater.py" />
+    <Compile Include="1.ORIGINALCODE\astarModification1Less.py" />
+    <Compile Include="1.ORIGINALCODE\depthFirst.py" />
+    <Compile Include="1.ORIGINALCODE\dijkstra.py" />
+    <Compile Include="1.ORIGINALCODE\dijkstraModification1.py" />
+    <Compile Include="1.ORIGINALCODE\idaStar.py" />
+    <Compile Include="1.ORIGINALCODE\jumpPointSearch.py" />
+    <Compile Include="1.ORIGINALCODE\Main.py" />
+    <Compile Include="1.ORIGINALCODE\readImage.py" />
+    <Compile Include="1.ORIGINALCODE\showAlgo.py" />
+    <Compile Include="algorithms\astar\astar.py" />
+    <Compile Include="algorithms\astar\astarModification1Greater.py" />
+    <Compile Include="algorithms\astar\astarModification1Less.py" />
+    <Compile Include="algorithms\depthFirst.py" />
+    <Compile Include="algorithms\dijkstra\dijkstra.py" />
+    <Compile Include="algorithms\dijkstra\dijkstraModification1.py" />
+    <Compile Include="algorithms\idaStar.py" />
+    <Compile Include="algorithms\jumpPointSearch.py" />
+    <Compile Include="algorithms\showAlgo.py" />
+    <Compile Include="analyseImage\addGridToMap.py" />
+    <Compile Include="analyseImage\analyseSquare.py" />
+    <Compile Include="analyseImage\readImage.py" />
+    <Compile Include="Main.py" />
+    <Compile Include="MainOld.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1.ORIGINALCODE\testMaps\blankImage.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test10Astar.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test10AstarModification1Greater.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test10AstarModification1Less.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test10Dijkstra.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test1Astar.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test1AstarModification1Greater.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test1AstarModification1Less.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test1Dijkstra.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test2Astar.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test2AstarModification1Greater.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test2AstarModification1Less.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test2Dijkstra.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test3Astar.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test3AstarModification1Greater.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test3AstarModification1Less.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test3Dijkstra.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test4Astar.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test4AstarModification1Greater.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test4AstarModification1Less.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test4Dijkstra.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test5Astar.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test5AstarModification1Greater.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test5AstarModification1Less.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test5Dijkstra.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test6Astar.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test6AstarModification1Greater.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test6AstarModification1Less.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test6Dijkstra.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test7Astar.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test7AstarModification1Greater.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test7AstarModification1Less.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test7Dijkstra.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test8Astar.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test8AstarModification1Greater.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test8AstarModification1Less.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test8Dijkstra.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test9Astar.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test9AstarModification1Greater.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test9AstarModification1Less.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\finalPaths\test9Dijkstra.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\test1.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\test10.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\test2.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\test3.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\test4.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\test5.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\test6.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\test7.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\test8.png" />
+    <Content Include="1.ORIGINALCODE\testMaps\test9.png" />
+    <Content Include="testMaps\blankImage.png" />
+    <Content Include="testMaps\finalPaths\test10Astar.png" />
+    <Content Include="testMaps\finalPaths\test10AstarModification1Greater.png" />
+    <Content Include="testMaps\finalPaths\test10AstarModification1Less.png" />
+    <Content Include="testMaps\finalPaths\test10Dijkstra.png" />
+    <Content Include="testMaps\finalPaths\test1Astar.png" />
+    <Content Include="testMaps\finalPaths\test1AstarModification1Greater.png" />
+    <Content Include="testMaps\finalPaths\test1AstarModification1Less.png" />
+    <Content Include="testMaps\finalPaths\test1Dijkstra.png" />
+    <Content Include="testMaps\finalPaths\test2Astar.png" />
+    <Content Include="testMaps\finalPaths\test2AstarModification1Greater.png" />
+    <Content Include="testMaps\finalPaths\test2AstarModification1Less.png" />
+    <Content Include="testMaps\finalPaths\test2Dijkstra.png" />
+    <Content Include="testMaps\finalPaths\test3Astar.png" />
+    <Content Include="testMaps\finalPaths\test3AstarModification1Greater.png" />
+    <Content Include="testMaps\finalPaths\test3AstarModification1Less.png" />
+    <Content Include="testMaps\finalPaths\test3Dijkstra.png" />
+    <Content Include="testMaps\finalPaths\test4Astar.png" />
+    <Content Include="testMaps\finalPaths\test4AstarModification1Greater.png" />
+    <Content Include="testMaps\finalPaths\test4AstarModification1Less.png" />
+    <Content Include="testMaps\finalPaths\test4Dijkstra.png" />
+    <Content Include="testMaps\finalPaths\test5Astar.png" />
+    <Content Include="testMaps\finalPaths\test5AstarModification1Greater.png" />
+    <Content Include="testMaps\finalPaths\test5AstarModification1Less.png" />
+    <Content Include="testMaps\finalPaths\test5Dijkstra.png" />
+    <Content Include="testMaps\finalPaths\test6Astar.png" />
+    <Content Include="testMaps\finalPaths\test6AstarModification1Greater.png" />
+    <Content Include="testMaps\finalPaths\test6AstarModification1Less.png" />
+    <Content Include="testMaps\finalPaths\test6Dijkstra.png" />
+    <Content Include="testMaps\finalPaths\test7Astar.png" />
+    <Content Include="testMaps\finalPaths\test7AstarModification1Greater.png" />
+    <Content Include="testMaps\finalPaths\test7AstarModification1Less.png" />
+    <Content Include="testMaps\finalPaths\test7Dijkstra.png" />
+    <Content Include="testMaps\finalPaths\test8Astar.png" />
+    <Content Include="testMaps\finalPaths\test8AstarModification1Greater.png" />
+    <Content Include="testMaps\finalPaths\test8AstarModification1Less.png" />
+    <Content Include="testMaps\finalPaths\test8Dijkstra.png" />
+    <Content Include="testMaps\finalPaths\test9Astar.png" />
+    <Content Include="testMaps\finalPaths\test9AstarModification1Greater.png" />
+    <Content Include="testMaps\finalPaths\test9AstarModification1Less.png" />
+    <Content Include="testMaps\finalPaths\test9Dijkstra.png" />
+    <Content Include="testMaps\test1.png" />
+    <Content Include="testMaps\test10.png" />
+    <Content Include="testMaps\test2.png" />
+    <Content Include="testMaps\test3.png" />
+    <Content Include="testMaps\test4.png" />
+    <Content Include="testMaps\test5.png" />
+    <Content Include="testMaps\test6.png" />
+    <Content Include="testMaps\test7.png" />
+    <Content Include="testMaps\test8.png" />
+    <Content Include="testMaps\test9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="1.ORIGINALCODE" />
+    <Folder Include="1.ORIGINALCODE\testMaps" />
+    <Folder Include="1.ORIGINALCODE\testMaps\finalPaths" />
+    <Folder Include="algorithms" />
+    <Folder Include="algorithms\astar" />
+    <Folder Include="algorithms\dijkstra" />
+    <Folder Include="analyseImage" />
+    <Folder Include="testMaps" />
+    <Folder Include="testMaps\finalPaths" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
